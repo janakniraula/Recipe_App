@@ -35,7 +35,7 @@ export const Register = () => {
                         <div className="form-text">
                             <h2>Welcome Back</h2>
                             <p>Please Login To Continue</p>
-                            <a href="/login"><button className="login-btn">Login Here</button></a>
+                            <link to="/login"><button className="login-btn">Login Here</button></link>
                         </div>
 
                         <div className="registration-form">

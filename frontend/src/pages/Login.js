@@ -37,7 +37,7 @@ export const Login = () => {
                         <div className="form-text">
                             <h2>Hello Friend</h2>
                             <p>New Here? Start With Register</p>
-                            <a href="/register"><button className="registration-btn">Register Here</button></a>
+                            <link to="/register"><button cllinkssName="registration-btn">Register Here</button></link>
                         </div>
 
                         <div className="login-form">
