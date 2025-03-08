@@ -38,7 +38,7 @@ export const CreateRecipe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/recipes", recipe, {
+      await axios.post("https://recipe-sharing-react-app.onrender.com/recipes", recipe, {
         headers: { authorization: `Bearer ${cookies.access_token}` }
       });
       alert("Recipe created successfully!");

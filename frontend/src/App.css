@@ -1,60 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Urbanist',sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+#logo {
+    font-family: 'Headland One', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #f18a36;
+    /* Warm Orange */
+    letter-spacing: 2px;
 }
 
 body {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),
-  url("../public/back-image.jpg"); /* Use absolute path in public folder */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+        url("../public/back-image.jpg");
+    /* Use absolute path in public folder */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
-  background: transparent; /* Keeps background image visible */
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  z-index: 1000;
+    background: transparent;
+    /* Keeps background image visible */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
 }
 
 
-:root{
-    --var-primary-color:#2888E8FF;
+:root {
+    --var-primary-color: #2888E8FF;
 }
-html{
+
+html {
     font-size: 49%;
 }
 
-h1,h2,h3,h4{
-    font-family:'Lexend Deca',sans-serif;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 4.8rem;
 }
-h2{
+
+h2 {
     font-size: 3rem;
 }
 
-p{
+p {
     font-size: 1.6rem;
     letter-spacing: 0.08rem;
 }
 
 
-button,input[type="submit"]{
+button,
+input[type="submit"] {
     border: 1px solid #fff;
     outline: none;
-    padding:.6rem 1.2rem;
+    padding: .6rem 1.2rem;
     font-size: 1.7rem;
     text-transform: capitalize;
     letter-spacing: 0.05rem;
@@ -66,28 +83,29 @@ button,input[type="submit"]{
 
 /* now registation page styling */
 
-.registration-header{
+.registration-header {
     height: auto;
     /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), */
     /* url(../public/hero.jpg); */
     /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
-    
+
 }
 
 
 
 main {
-  min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0; /* Prevents content from sticking to the edges */
-  margin-top: 10vh;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    /* Prevents content from sticking to the edges */
+    margin-top: 10vh;
 }
 
-.container{
+.container {
     height: 10vh;
     width: 80vw;
     margin: auto;
@@ -96,14 +114,14 @@ main {
     align-items: center;
 }
 
-.logo a{
+.logo a {
     font-size: 2.7rem;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -114,10 +132,12 @@ ul{
 
 
 
-li >a{
+li>a {
     color: #fff;
     text-decoration: none;
-}/* Apply same styles as navbar links to the Logout button */
+}
+
+/* Apply same styles as navbar links to the Logout button */
 #logout_btn {
     background: none;
     border: none;
@@ -126,9 +146,12 @@ li >a{
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    display: inline-flex;  /* Ensures proper inline alignment */
-    align-items: center;   /* Aligns text with navbar links */
-    padding: 0;  /* Remove extra padding causing misalignment */
+    display: inline-flex;
+    /* Ensures proper inline alignment */
+    align-items: center;
+    /* Aligns text with navbar links */
+    padding: 0;
+    /* Remove extra padding causing misalignment */
 }
 
 
@@ -137,7 +160,7 @@ li >a{
     text-decoration: underline;
 }
 
-#create-btn{
+#create-btn {
     background: none;
     border: none;
     color: #fff;
@@ -145,13 +168,16 @@ li >a{
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    display: inline-flex;  /* Ensures proper inline alignment */
-    align-items: center;   /* Aligns text with navbar links */
-    padding: 0;  /* Remove extra padding causing misalignment */
+    display: inline-flex;
+    /* Ensures proper inline alignment */
+    align-items: center;
+    /* Aligns text with navbar links */
+    padding: 0;
+    /* Remove extra padding causing misalignment */
 }
 
 
-#save-btn{
+#save-btn {
     background: none;
     border: none;
     color: #fff;
@@ -159,9 +185,12 @@ li >a{
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    display: inline-flex;  /* Ensures proper inline alignment */
-    align-items: center;   /* Aligns text with navbar links */
-    padding: 0;  /* Remove extra padding causing misalignment */
+    display: inline-flex;
+    /* Ensures proper inline alignment */
+    align-items: center;
+    /* Aligns text with navbar links */
+    padding: 0;
+    /* Remove extra padding causing misalignment */
 }
 
 
@@ -169,57 +198,59 @@ li >a{
 
 /* Home page styling */
 
-.hero_section .ccontainer{
+.hero_section .ccontainer {
     height: inherit;
 }
 
-.hero_content{
+.hero_content {
     color: #fff;
     text-align: center;
 }
 
-.hero_content p{
+.hero_content p {
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 1.3rem;
     letter-spacing: .2rem;
 }
-.hero_content button{
+
+.hero_content button {
     margin-top: 2rem;
     background-color: var(--var-primary-color);
     border: none;
     padding: 1rem 2rem;
-    
+
 }
 
 /* registation page styling */
 
-main{
+main {
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.grid-two--column{
+.grid-two--column {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.registration,.login{
-    min-height:30rem;
-    min-width:40vw;
+.registration,
+.login {
+    min-height: 30rem;
+    min-width: 40vw;
     background-color: aquamarine;
 }
 
-.form-text{
-    height:inherit;
+.form-text {
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
-    url("../public/fire.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url("../public/fire.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -227,161 +258,172 @@ main{
     padding: 3rem 2rem;
 }
 
-.login .form-text{
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)),
-    url("../public/make.jpg");
+.login .form-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+        url("../public/make.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.form-text p{
+
+.form-text p {
     width: 30ch;
     text-align: center;
     margin: 2rem 0 6rem 0;
 }
 
-.form-text button{
+.form-text button {
     background-color: #fff;
     color: #000;
 }
 
-.form-text button:hover{
+.form-text button:hover {
     background-color: transparent;
-    color: #fff ;
+    color: #fff;
 }
 
-.registration-form,.login-form{
+.registration-form,
+.login-form {
     width: 100%;
     min-height: 45vh;
     background-color: #fff;
     display: flex;
     justify-content: center;
-    align-items:center;  
+    align-items: center;
     flex-direction: column;
 }
 
-.registration-form p,.login-form p{
+.registration-form p,
+.login-form p {
     margin: 1rem 0.7rem 0;
-} 
+}
 
-.social-icons{
+.social-icons {
     display: flex;
     gap: 1.4rem;
     font-size: 1.5rem;
     margin: 1rem 0 0.6rem 0;
 }
 
-.fa-brands{
+.fa-brands {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    border:0.1rem solid #ccc;
+    border: 0.1rem solid #ccc;
     display: inline-flex;
     justify-content: center;
-    align-items:center;  
+    align-items: center;
 }
 
-input{
+input {
     width: 20rem;
-    margin:.7rem 0;
+    margin: .7rem 0;
     border: none;
     padding: 1rem 1.8rem;
     background-color: #e8e8e8;
     letter-spacing: .06rem;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     margin-top: 1rem;
     min-width: 10rem;
     background-color: var(--var-primary-color);
     color: #fff;
 }
 
-@media screen and (max-width:768px){
-    .grid-two--column{
+@media screen and (max-width:768px) {
+    .grid-two--column {
 
         grid-template-columns: 1fr;
     }
 
-    .registration-header .container,.home-header .container{
+    .registration-header .container,
+    .home-header .container {
         flex-direction: column;
         gap: 1rem;
 
     }
-    
-    .registration-header .container,.home-header .container .logo{
+
+    .registration-header .container,
+    .home-header .container .logo {
         padding-top: 2rem;
     }
 
-    .registration,.login{
+    .registration,
+    .login {
         min-width: 90vw;
     }
 
-    .form-text{
+    .form-text {
         order: 1;
 
     }
 
-    .registration,.login{
+    .registration,
+    .login {
         order: 0;
     }
-    
+
     .form-text p {
         width: 25ch;
     }
 }
-  
-  /* style for create recipe */
-  /* Form styling */
-  .form-container{
+
+/* style for create recipe */
+/* Form styling */
+.form-container {
     padding: 10px;
-    margin-top: 10vh; /* Adjust based on navbar height */
+    margin-top: 10vh;
+    /* Adjust based on navbar height */
     overflow-y: auto;
     max-height: calc(100vh - 10vh);
     box-sizing: border-box;
-  }
-  .create-recipe {
+}
+
+.create-recipe {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Reduced max-width */
-    margin: 5rem auto; /* Increased top margin */
-    
-  }
-  
-  .create-recipe h2 {
+    max-width: 500px;
+    /* Reduced max-width */
+    margin: 5rem auto;
+    /* Increased top margin */
+
+}
+
+.create-recipe h2 {
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
     text-align: center;
-  }
-  
-  .create-recipe form {
+}
+
+.create-recipe form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
-  
-  .create-recipe label {
+}
+
+.create-recipe label {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .create-recipe input,
-  .create-recipe textarea {
+}
+
+.create-recipe input,
+.create-recipe textarea {
     padding: 0.8rem;
     font-size: 1.6rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
-  }
-  
-  .create-recipe textarea {
+}
+
+.create-recipe textarea {
     resize: vertical;
     min-height: 100px;
-  }
-  
-  .create-recipe button {
+}
+
+.create-recipe button {
     padding: 0.8rem 1.6rem;
     font-size: 1.6rem;
     background-color: var(--var-primary-color);
@@ -390,53 +432,57 @@ input[type="submit"]{
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .create-recipe button:hover {
+}
+
+.create-recipe button:hover {
     background-color: darken(var(--var-primary-color), 10%);
-  }
-  
-  .create-recipe button[type="button"] {
+}
+
+.create-recipe button[type="button"] {
     background-color: #f0f0f0;
     color: #333;
-  }
-  
-  .create-recipe button[type="button"]:hover {
+}
+
+.create-recipe button[type="button"]:hover {
     background-color: #e0e0e0;
-  }
-@media screen and (max-width:768px){
-    .grid-two--column{
+}
+
+@media screen and (max-width:768px) {
+    .grid-two--column {
 
         grid-template-columns: 1fr;
     }
 
-    .registration-header .container,.home-header .container{
+    .registration-header .container,
+    .home-header .container {
         flex-direction: column;
         gap: 1rem;
 
     }
-    
-    .registration-header .container,.home-header .container .logo{
+
+    .registration-header .container,
+    .home-header .container .logo {
         padding-top: 2rem;
     }
 
-    .registration,.login{
+    .registration,
+    .login {
         min-width: 90vw;
     }
 
-    .form-text{
+    .form-text {
         order: 1;
 
     }
 
-    .registration,.login{
+    .registration,
+    .login {
         order: 0;
     }
-    
+
     .form-text p {
         width: 25ch;
     }
 }
 
 /* Recipe Card */
-

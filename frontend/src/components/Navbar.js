@@ -43,7 +43,7 @@ function Navbar() {
     <header className="registration-header">
       <div className="container">
         <div className="logo">
-          <Link to="/">Brijesh</Link>
+          <Link id="logo"to="/">Tasty Bites</Link>
         </div>
         <nav>
           <ul>

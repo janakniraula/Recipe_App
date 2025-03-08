@@ -9,7 +9,7 @@ export const SavedRecipes = () => {
 
     useEffect(() => {
         
-        axios.get("http://localhost:3000/recipes/savedRecipes", {
+        axios.get("https://recipe-sharing-react-app.onrender.com/recipes/savedRecipes", {
             headers: { authorization: `Bearer ${cookies.access_token}` },
         })
         .then(response => setSavedRecipes(response.data))
@@ -19,13 +19,14 @@ export const SavedRecipes = () => {
    const unsaveRecipe = async (recipeId) => {
         try {
             const response = await axios.put(
-                "http://localhost:3000/recipes/unsave",
+                "https://recipe-sharing-react-app.onrender.com/recipes/unsave",
                 { recipeId },
                 { headers: { authorization: `Bearer ${cookies.access_token}` } }
             );
 
             console.log(" Recipe unsaved:", response.data.savedRecipes);
-            setSavedRecipes(response.data.savedRecipes || []); 
+            // setSavedRecipes(response.data.savedRecipes || []); 
+            setSavedRecipes((prevRecipes) => prevRecipes.filter(recipe => recipe._id !== recipeId));
         } catch (error) {
             console.error("Error unsaving recipe!", error);
         }

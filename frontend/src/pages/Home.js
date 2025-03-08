@@ -12,7 +12,7 @@ export const Home = () => {
 
     useEffect(() => {
         // Fetch all recipes
-        axios.get("http://localhost:3000/recipes")
+        axios.get("https://recipe-sharing-react-app.onrender.com/recipes")
             .then((response) => {
                 setRecipes(response.data);
             })
@@ -22,7 +22,7 @@ export const Home = () => {
 
         // Fetch saved recipes if user is logged in
         if (cookies.access_token) {
-            axios.get("http://localhost:3000/recipes/savedRecipes/ids", {
+            axios.get("https://recipe-sharing-react-app.onrender.com/recipes/savedRecipes/ids", {
                 headers: { authorization: `Bearer ${cookies.access_token}` },
             })
             .then((response) => {
@@ -40,7 +40,7 @@ export const Home = () => {
           console.log("Token being sent:", cookies.access_token); // Debugging log
   
           const response = await axios.put(
-              "http://localhost:3000/recipes",
+              "https://recipe-sharing-react-app.onrender.com/recipes",
               { recipeId },
               { headers: { authorization: `Bearer ${cookies.access_token}` } }
           );
@@ -55,7 +55,7 @@ export const Home = () => {
   const unsaveRecipe = async (recipeId) => {
     try {
         const response = await axios.put(
-            "http://localhost:3000/recipes/unsave",
+            "https://recipe-sharing-react-app.onrender.com/recipes/unsave",
             { recipeId },
             { headers: { authorization: `Bearer ${cookies.access_token}` } }
         );

@@ -13,7 +13,7 @@ export const Register = () => {
         e.preventDefault();
 
         try {
-            await axios.post("http://localhost:3000/auth/register", {
+            await axios.post("https://recipe-sharing-react-app.onrender.com/auth/register", {
                 username,
                 email,
                 password
