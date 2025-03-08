@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
     const [email, setEmail] = useState("");
@@ -37,7 +38,7 @@ export const Login = () => {
                         <div className="form-text">
                             <h2>Hello Friend</h2>
                             <p>New Here? Start With Register</p>
-                            <link to="/register"><button cllinkssName="registration-btn">Register Here</button></link>
+                            <Link to="/register"><button className="registration-btn">Register Here</button></Link>
                         </div>
 
                         <div className="login-form">
